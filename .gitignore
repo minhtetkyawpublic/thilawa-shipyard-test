@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+dev-server.*.log
+screenshots*.png
+test-results
+.env*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
