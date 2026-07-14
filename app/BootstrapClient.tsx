@@ -9,6 +9,7 @@ export default function BootstrapClient() {
     const handleAnchorClick = (event: MouseEvent) => {
       const link = (event.target as HTMLElement).closest<HTMLAnchorElement>('a[href^="#"]');
       if (!link) return;
+      if (link.matches(".dropdown-toggle,[data-bs-toggle='dropdown']")) return;
 
       const hash = link.getAttribute("href");
       if (!hash || hash === "#") return;
